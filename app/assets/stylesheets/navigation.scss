@@ -1,0 +1,8 @@
+a.navbar-item {
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #0f1c29;
+    &:hover {
+        color: #e7d3d5;
+    }
+}
