@@ -1,0 +1,8 @@
+    <h2>Let's create our chore list</h2>
+
+<%= form_with model: @chore do |f| %>
+    <%= f.text_field :task %>
+
+    <%= f.submit %>
+<% end %>
+

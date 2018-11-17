@@ -2,6 +2,8 @@
 
 body {
     background-color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
 }
 
 
@@ -21,12 +23,15 @@ body {
 }
 
 .hero {
-    background-color: #F0F0F1;
+    background-color: #FFF;
 }
 .pages-title {
     font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
-    color: #444;
-    font-style: italic;
+    font-weight: 300;
     font-size: 20px;
+}
+
+.pages-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
