@@ -1,8 +1,19 @@
-    <h2>Let's create our chore list</h2>
 
-<%= form_with model: @chore do |f| %>
+<%= form_for @chore do |f| %>
+    <%= f.label :add_chores %>
     <%= f.text_field :task %>
 
+    <%= f.label :chore_list_name %>
+    <%= f.fields_for :category_names do |c| %>
+        <%= c.label :category %>
+        <%= c.text_field :name %>
+
+        <%= c.fields_for :tags do |t| %>
+            <%= t.label :room_name %>
+            <%= t.text_field :title %>
+        <% end %>
+    <% end %>
+    
     <%= f.submit %>
 <% end %>
 
