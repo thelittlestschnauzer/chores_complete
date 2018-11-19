@@ -1,3 +1,22 @@
-// Place all the styles related to the Chores controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.tag-title {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #3E3E3B;
+}
+
+.chore-list {
+    text-transform: uppercase;
+    .checkbox {
+        padding-right: 10px;
+    }
+}
+
+.chore-page {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+

@@ -3,6 +3,7 @@ class ChoresController < ApplicationController
 
     def new 
         @chore = Chore.new
+        @chore.build_category
     end 
 
     def create 
@@ -17,10 +18,14 @@ class ChoresController < ApplicationController
     def show 
     end 
 
+    def index
+        @chores = Chore.all 
+    end 
+
     private 
 
     def chore_params
-        params.require(:chore).permit(:task, :assign_to, :complete, :category_id, :tag_id)
+        params.require(:chore).permit(:task, :assign_to, :complete, :category_id, :tag_id, categories_attributes: [:name])
     end 
 
     def set_chore
